@@ -116,7 +116,7 @@ const ReviewForm = () => {
                     <Label htmlFor="name">Your Name *</Label>
                     <Input
                       id="name"
-                      placeholder="eg: Mohamed Rifaz"
+                      placeholder="eg: Fajees Ajmeer"
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
                     />
