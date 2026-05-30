@@ -23,9 +23,6 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="flex items-center justify-center">
-             <img src="/logo.png" alt="Twin Auto Traders Logo" className="h-10 w-auto object-contain" />
-            </div>
             <div className="flex flex-col">
               <span className="font-heading text-lg md:text-xl font-bold text-accent-foreground leading-tight">
                 Twin Auto
