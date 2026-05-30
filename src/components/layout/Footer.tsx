@@ -9,6 +9,8 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
+              <div className="w-10 h-10 bg-black rounded-lg flex items-center justify-center">
+                <img src="./t2.png" alt="Twin Auto Traders Logo" />
               </div>
               <div className="flex flex-col">
                 <span className="font-heading text-xl font-bold leading-tight">Twin Auto</span>
