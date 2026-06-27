@@ -32,9 +32,24 @@ const AdminReviews = () => {
   };
 
   const remove = async (id: string) => {
-    await supabase.from("reviews").delete().eq("id", id);
-    toast.success("Review deleted!");
-    fetchReviews();
+
+ const { error } = await supabase
+ .from("reviews")
+ .delete()
+ .eq("id", id);
+
+ if (error) {
+   toast.error("Delete failed");
+   console.log(error);
+   return;
+ }
+
+ toast.success("Review deleted!");
+
+ setReviews(prev =>
+   prev.filter(item => item.id !== id)
+ );
+};
   };
 
   if (!authed) {
